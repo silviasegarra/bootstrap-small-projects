@@ -1,0 +1,22 @@
+body{
+    background: url(newyork2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.titleandbutton{
+    margin-top: 3%;
+}
+
+#image_logo{
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto;
+}
+
+#login-modal input{
+    margin-top: 10px;
+}
+
+.modal-content{
+    background-color: rgb(148, 199, 201);
+}

@@ -1,0 +1,10 @@
+body{
+    background: url(newyork.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 3%;
+   
+}
+
+.button-modal{
+    margin-top: 2%;
+}

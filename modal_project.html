@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-modalproject.css">
+    <title>Modal project from the course</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 titleandbutton"><!--TITLE & MODAL BUTTON-->
+        <!--in order to work with modal we need to use: data-target="#login-modal" data-toggle="modal" role="button"
+        for bootstrap 5 should be: data-bs-target="#login-modal" data-bs-toggle="modal" role="button"-->
+            <h1 class="text-center">A project based on Modal</h1>
+            <p class="text-center"><a href="#" data-target="#login-modal" data-toggle="modal" role="button" class="btn btn-primary btn-lg">Login Here</a></p>
+        </div>
+    </div>
+</div>
+
+<!--MODAL INSIDE-->
+<!--the id should be the same as we have written before in data-target: login-modal (#means id)-->
+<div class="modal fade" id="login-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+    <!--HEADER OF THIS MODAL -> LOGO-->
+            <div class="modal-header text-center">
+                <img id="image_logo" class="img_thumbnail" src="logo.png" alt="logo of the company">
+            </div>
+    <!--BODY OF THIS MODAL-->        
+            <div id="div-forms">
+                <div class="modal-body" >
+                    <form action="">
+                        <div><span>Type your email and password here:</span></div>
+        <!--EMail-->       <input class="form-control" placeholder="Email" type="email" required>
+        <!--Password-->    <input class="form-control" placeholder="Password" type="password" required>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Sign In</button>
+                        </div>
+                    </div>
+                 </div>
+                     </form>
+
+
+             </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</html>
